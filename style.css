@@ -1,0 +1,714 @@
+* {
+    margin: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    background-color: #0F0F0F;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 15px 20px;
+    background-color: #0A0A0A;
+    z-index: 6999;
+}
+
+.name {
+    font-family: "Mr Bedfort", cursive;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #faf8f4;
+    background-color: #0A0A0A;
+    border: none;
+}
+
+
+.info {
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.3rem;
+    background-color: transparent;
+}
+
+.info a {
+    background-color: #0A0A0A;
+}
+
+.ani:hover {
+    color: #F06543;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    /* transform: scale(1.3) translateY(-5px); */
+}
+
+.bars {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background-color: #0a0a0a;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    right: 2.5rem;
+    top: 60px;
+    height: 0px;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: rgba(10, 10, 10, 0.5);
+    backdrop-filter: blur(5.9px);
+}
+
+.dropdown.open {
+    height: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 69;
+}
+
+.dropdown li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(10, 10, 10, 0.8);
+    background-color: transparent;
+}
+
+.dropdown a {
+    background-color: transparent;
+}
+
+.greet {
+    margin: 4rem 5rem;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-around;
+}
+
+.greet-text {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.gif {
+    max-width: 400px;
+    /* flex-shrink: 0;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif img {
+    max-width: max-content;
+    height: auto;
+}
+
+.orange {
+    color: #F06543;
+}
+
+#element {
+    color: #F06543;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 30px 0px;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+.links {
+    display: flex;
+    gap: 12px;
+}
+
+.links i {
+    display: inline-flex;
+    font-size: 2.5rem;
+    padding: 0px 10px;
+    /* transition: 0.3s ease-in-out; */
+    color: #faf8f4;
+    border: none;
+    background-color: #0f0f0f;
+    align-content: center;
+}
+
+.links i:hover {
+    color: #F06543;
+    /* transform: scale(1.3) translateY(-5px); */
+    text-shadow: 0 0 100px #f06543;
+}
+
+.Resume {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #F06543;
+    color: #0A0A0A;
+    border: none;
+    font-size: 1.29rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.Resume:hover {
+    box-shadow: 0 0 500px #f06543;
+    transform: scale(1.03) translateY(-5px);
+}
+
+
+.aboutme {
+    margin: 8rem 8rem;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: space-around;
+}
+
+.aboutme-img img {
+    width: 310px;
+    height: 465x;
+    margin-top: 2rem;
+}
+
+.aboutme-text {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+
+.education {
+    margin: 4rem 5rem;
+    padding: 80px 20px;
+    /* gap: 20px; */
+}
+
+.education h2 {
+    margin: 2rem 3rem;
+}
+
+.education h2::after {
+    content: "";
+    width: 110px;
+    height: 1px;
+    display: inline-block;
+    background: white;
+    margin: 4px 10px;
+}
+
+.college {
+    display: flex;
+    /* flex-direction: column; */
+    width: 90%;
+    /* height: 500px; */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 2rem 3rem;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #141414;
+        transform: scale(1.01);
+    }
+
+    & * {
+        background-color: transparent;
+    }
+}
+
+
+
+.college img {
+    width: 200px;
+    height: 200px;
+    margin: 2rem 1rem;
+    padding: 15px 10px;
+}
+
+.college h1 {
+    font-size: 2rem;
+    margin: 10px 15px;
+    padding: 15px 10px;
+    flex: 2;
+
+}
+
+.college p {
+    margin: 10px 15px;
+    padding: 15px 10px;
+
+}
+
+
+.school {
+    display: flex;
+    /* flex-direction: column; */
+    width: 90%;
+    /* height: 500px; */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 2rem 3rem;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #141414;
+        transform: scale(1.01);
+    }
+
+    & * {
+        background-color: transparent;
+    }
+
+}
+
+.school img {
+    width: 200px;
+    height: 200px;
+    margin: 2rem 1rem;
+    padding: 15px 10px;
+}
+
+.school h1 {
+    font-size: 2rem;
+    margin: 10px 15px;
+    padding: 15px 10px;
+}
+
+.school p {
+    margin: 10px 15px;
+    padding: 15px 10px;
+}
+
+
+
+.skills {
+    margin: 4rem 5rem;
+    padding: 80px 20px;
+    /* gap: 20px; */
+}
+
+.skills h2 {
+    margin: 2rem 3rem;
+}
+
+.skills h2::after {
+    content: "";
+    width: 110px;
+    height: 1px;
+    display: inline-block;
+    background: white;
+    margin: 4px 10px;
+}
+
+.languages {
+    width: 84%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 2rem 3rem;
+    padding: 30px 20px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #141414;
+        transform: scale(1.01);
+    }
+
+    & * {
+        background-color: transparent;
+    }
+}
+
+.languages h3 {
+    font-size: 2rem;
+    margin: 0 2rem;
+    margin-bottom: 3rem;
+}
+
+.skills-icon figcaption {
+    /* position: absolute; */
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.languages figure {
+    margin: 0 1rem;
+}
+
+
+
+
+/*----------------------------------------------------- Media Queries------------------------------------------------- */
+
+@media(max-width:1200px) {
+    .container {
+        flex-wrap: wrap;
+        display: inline-block;
+    }
+}
+
+@media(max-width: 1040px) {
+    .aboutme-img img {
+        width: 290px;
+        height: 445x;
+    }
+
+    .aboutme-text p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:1012px) {
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        width: 650px;
+    }
+}
+
+
+@media (max-width: 933px) {
+    .navbar {
+        height: 50px;
+        padding: 10px 15px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+
+    .greet {
+        margin: 1rem 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .links i {
+        font-size: 2rem;
+    }
+
+    .Resume {
+        width: 90px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
+
+    .aboutme {
+        margin: 2rem 2.5rem;
+    }
+}
+
+@media (max-width: 895px) {
+    .navbar {
+        height: 50px;
+        padding: 10px 15px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    .dropdown {
+        display: block;
+        position: fixed;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .greet {
+        margin: 1rem;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .links i {
+        font-size: 1.5rem;
+    }
+
+    .Resume {
+        font-size: 1rem;
+    }
+
+    .gif {
+        display: none;
+    }
+
+    .aboutme {
+        margin: 2rem;
+        padding: 15px;
+    }
+
+    .aboutme-img img {
+        width: 250px;
+        height: 425x;
+    }
+
+    .aboutme-text p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .aboutme {
+        flex-direction: column;
+        margin: 8rem 0rem;
+        gap: 20px;
+    }
+
+    .aboutme-img {
+        order: -1;
+    }
+
+    .aboutme-text {
+        order: 1;
+        margin: 1rem;
+    }
+
+    .aboutme-img img {
+        height: 240px;
+        width: 240px;
+    }
+
+    .college,
+    .school {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1rem 0;
+    }
+
+    .college img,
+    .school img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .college h1,
+    .school h1 {
+        font-size: 1.5rem;
+    }
+
+    .college p,
+    .school p {
+        font-size: 1.1rem;
+        /* text-align: center; */
+    }
+
+    .education {
+        margin: 4rem 1rem;
+        padding: 80px 10px;
+    }
+
+    .education h2,
+    .skills h2 {
+        margin: 1.5rem 0;
+    }
+
+    .skills {
+        margin: 4rem 1rem;
+        padding: 80px 10px;
+    }
+
+    .languages {
+        margin: 1rem 0;
+        padding: 35px;
+    }
+
+    .container img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navbar {
+        height: 40px;
+        padding: 8px 10px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .dropdown {
+        width: 250px;
+        right: 0;
+    }
+
+    .greet {
+        margin: 0.5rem;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .links {
+        gap: 8px;
+    }
+
+    .links i {
+        font-size: 1.2rem;
+    }
+
+    .Resume {
+        width: 80px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    .aboutme {
+        margin: 8rem 0rem;
+        padding: 10px;
+    }
+
+    .aboutme-text p {
+        font-size: 1.1rem;
+    }
+
+    .languages {
+        margin: 1rem 0;
+        padding: 30px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .skills-icon figcaption {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media(max-width: 416) {
+    .education h2 {
+        margin: 0px 0rem;
+    }
+
+    .container img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        height: 40px;
+        padding: 5px 8px;
+    }
+
+    .greet {
+        padding: 50px 15px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .links i {
+        font-size: 1.8rem;
+    }
+
+    .Resume {
+        width: 80px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .aboutme {
+        padding: 50px 15px;
+    }
+
+    .element {
+        font-size: 1.5rem;
+    }
+
+    .languages {
+        margin: 1rem 0;
+        padding: 30px;
+    }
+
+    .container img {
+        width: 50px;
+        height: 50px;
+    }
+}
