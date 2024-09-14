@@ -1,6 +1,6 @@
 * {
     margin: 0px;
-    color: white;
+    color: #FAF9F6;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     background-color: #0F0F0F;
@@ -9,6 +9,14 @@
 html {
     scroll-behavior: smooth;
 }
+
+
+/* .grid {
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, #4b4a4a 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(75, 74, 74, 0.8) 1px, transparent 1px);
+  } */
 
 .navbar {
     height: 60px;
@@ -19,14 +27,14 @@ html {
     padding: 15px 20px;
     background-color: #0A0A0A;
     z-index: 6999;
+    /* background-color: transparent; */
 }
 
 .name {
     font-family: "Mr Bedfort", cursive;
     font-size: 2rem;
     font-weight: 500;
-    color: #faf8f4;
-    background-color: #0A0A0A;
+    background-color: transparent;
     border: none;
 }
 
@@ -42,7 +50,7 @@ html {
 }
 
 .info a {
-    background-color: #0A0A0A;
+    background-color: transparent;
 }
 
 .ani:hover {
@@ -102,6 +110,7 @@ html {
     align-items: center;
     gap: 100px;
     justify-content: space-around;
+    background-color: transparent;
 }
 
 .greet-text {
@@ -109,6 +118,7 @@ html {
     display: flex;
     flex-direction: column;
     flex: 1;
+    background-color: transparent;
 }
 
 .gif {
@@ -117,25 +127,30 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
 }
 
 .gif img {
     max-width: max-content;
     height: auto;
+    background-color: transparent;
 }
 
 .orange {
     color: #F06543;
+    background-color: transparent;
 }
 
 #element {
     color: #F06543;
     font-size: 2rem;
+    background-color: transparent;
 }
 
 h1 {
     font-size: 4.5rem;
     font-weight: 500;
+    background-color: transparent;
 }
 
 p {
@@ -143,11 +158,13 @@ p {
     margin: 30px 0px;
     line-height: 1.5;
     max-width: 100%;
+    background-color: transparent;
 }
 
 .links {
     display: flex;
     gap: 12px;
+    background-color: transparent;
 }
 
 .links i {
@@ -155,9 +172,9 @@ p {
     font-size: 2.5rem;
     padding: 0px 10px;
     /* transition: 0.3s ease-in-out; */
-    color: #faf8f4;
+    color: #FAF9F6;
     border: none;
-    background-color: #0f0f0f;
+    background-color: transparent;
     align-content: center;
 }
 
@@ -197,7 +214,6 @@ p {
 
 .aboutme-img img {
     width: 310px;
-    height: 465x;
     margin-top: 2rem;
 }
 
@@ -365,6 +381,10 @@ p {
 }
 
 
+
+a, li, span{
+    background-color: transparent;
+}
 
 
 /*----------------------------------------------------- Media Queries------------------------------------------------- */
