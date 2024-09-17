@@ -4,19 +4,12 @@
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     background-color: #0F0F0F;
+    /* overflow: hidden; */
 }
 
 html {
     scroll-behavior: smooth;
 }
-
-
-/* .grid {
-    background-size: 40px 40px;
-    background-image:
-      linear-gradient(to right, #4b4a4a 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(75, 74, 74, 0.8) 1px, transparent 1px);
-  } */
 
 .navbar {
     height: 60px;
@@ -27,7 +20,9 @@ html {
     padding: 15px 20px;
     background-color: #0A0A0A;
     z-index: 6999;
-    /* background-color: transparent; */
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
 }
 
 .name {
@@ -62,7 +57,7 @@ html {
 
 .bars {
     font-size: 2rem;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     display: none;
@@ -119,6 +114,7 @@ html {
     flex-direction: column;
     flex: 1;
     background-color: transparent;
+    /* width: 100%; */
 }
 
 .gif {
