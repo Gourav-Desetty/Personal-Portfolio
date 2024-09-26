@@ -18,13 +18,13 @@ html {
     justify-content: space-between;
     margin: 0px;
     padding: 15px 20px;
-    background-color: rgba(10, 10, 10, 0.3);
+    background-color: rgba(10, 10, 10, 0.901);
     z-index: 6999;
     position: fixed;
     top: 0;
     width: 100%;
     backdrop-filter: blur(15px); 
-    border-bottom: 0.1px solid #F06543;
+    border-bottom: 0.1px solid #fb144a;
 }
 
 .name {
@@ -53,7 +53,7 @@ html {
 }
 
 .ani:hover {
-    color: #F06543;
+    color: #fb144a;
 }
 
 .info li a::before{
@@ -61,15 +61,18 @@ html {
     position: absolute;
     bottom: -3px;
     left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #F06543;
-    transition: width 0.3s ease-in-out;
+    width: 100%;
+    height: 1px;
+    background-color: #fb144a;
+    /* transition: width 0.3s ease-in-out; */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
 }
 
 .info li a:hover::before{
-    width: 100%;
-
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .bars {
@@ -126,25 +129,29 @@ html {
     position: absolute;
     bottom: -3px;
     left: 0;
-    width: 0%;
-    height: 1.8px;
-    background-color: #F06543;
-    transition: width 0.3s ease-in-out;
+    width: 100%;
+    height: 1px;
+    background-color: #fb144a;
+    /* transition: width 0.3s ease-in-out; */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
 }
 
 .dropdown li a:hover::before {
-    width: 100%; /* Full width on hover */
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .greet {
     margin: 10rem 5rem;
-    margin-top: 12rem;
+    margin-top: 10rem;
     padding: 25px 20px;
     display: flex;
     align-items: center;
     gap: 100px;
     justify-content: space-around;
-    background-color: transparent;
+    background-color: transparent;   
 }
 
 .greet-text {
@@ -172,12 +179,12 @@ html {
 }
 
 .orange {
-    color: #F06543;
+    color: #fb144a;
     background-color: transparent;
 }
 
 #element {
-    color: #F06543;
+    color: #fb144a;
     font-size: 2rem;
     background-color: transparent;
 }
@@ -214,16 +221,16 @@ p {
 }
 
 .links i:hover {
-    color: #F06543;
+    color: #fb144a;
     transform: scale(1.03) translateY(-5px);
-    text-shadow: 0 0 100px #f06543;
+    text-shadow: 0 0 100px #fb144a;
 }
 
 .Resume {
     width: 100px;
     height: 40px;
     border-radius: 10px;
-    background-color: #F06543;
+    background-color: #fb144a;
     color: #0A0A0A;
     border: none;
     font-size: 1.29rem;
@@ -233,23 +240,27 @@ p {
 }
 
 .Resume:hover {
-    filter: drop-shadow(2px 2px 18px #F06543) ;
+    filter: drop-shadow(2px 2px 18px #fb144a) ;
     transform: scale(1.03) translateY(-5px);
 }
 
 
 .aboutme {
-    margin: 4rem 5rem;
-    padding: 25px 20px;
+    /* margin: 4rem 5rem; */
+    padding: 100px 100px;
+    padding-top: 15rem;
     display: flex;
     align-items: center;
     gap: 80px;
     justify-content: space-around;
+    background-color: #fb144a;
 }
 
 .aboutme-img img {
     width: 310px;
-    margin-top: 2rem;
+    height: auto;
+    /* padding-top: 2rem; */
+    background-color: transparent;
 }
 
 .aboutme-text {
@@ -257,12 +268,16 @@ p {
     display: flex;
     flex-direction: column;
     flex: 1;
+    background-color: transparent;
+}
+
+.aboutme-text h2{
+    background-color: transparent;
 }
 
 
-
 .education {
-    margin: 4rem 5rem;
+    margin: 0 5rem;
     padding: 80px 20px;
     /* gap: 20px; */
 }
@@ -364,7 +379,7 @@ p {
 
 
 .skills {
-    margin: 4rem 5rem;
+    margin: 0 5rem;
     padding: 80px 20px;
     /* gap: 20px; */
 }
