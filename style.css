@@ -18,11 +18,13 @@ html {
     justify-content: space-between;
     margin: 0px;
     padding: 15px 20px;
-    background-color: #0A0A0A;
+    background-color: rgba(10, 10, 10, 0.3);
     z-index: 6999;
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    width: 100%; */
+    width: 100%;
+    backdrop-filter: blur(15px); 
+    border-bottom: 0.1px solid #F06543;
 }
 
 .name {
@@ -135,7 +137,8 @@ html {
 }
 
 .greet {
-    margin: 4rem 5rem;
+    margin: 10rem 5rem;
+    margin-top: 12rem;
     padding: 25px 20px;
     display: flex;
     align-items: center;
@@ -236,7 +239,7 @@ p {
 
 
 .aboutme {
-    margin: 8rem 8rem;
+    margin: 4rem 5rem;
     padding: 25px 20px;
     display: flex;
     align-items: center;
