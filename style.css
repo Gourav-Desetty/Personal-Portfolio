@@ -273,6 +273,8 @@ p {
 
 .aboutme-text h2{
     background-color: transparent;
+    color:yellow;
+    font-size: 2rem;
 }
 
 
@@ -300,12 +302,14 @@ p {
     /* flex-direction: column; */
     width: 90%;
     /* height: 500px; */
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    border: 1px solid #fb144a;
+    border-radius: 3px;
     margin: 2rem 3rem;
     transition: 0.3s ease-in-out;
 
     &:hover {
-        background-color: #141414;
+        background-color: rgba(10, 10, 10, 0.901);
         transform: scale(1.01);
     }
 
@@ -343,12 +347,14 @@ p {
     /* flex-direction: column; */
     width: 90%;
     /* height: 500px; */
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    border: 1px solid #fb144a;
+    border-radius: 3px;
     margin: 2rem 3rem;
     transition: 0.3s ease-in-out;
 
     &:hover {
-        background-color: #141414;
+        background-color: rgba(10, 10, 10, 0.901);
         transform: scale(1.01);
     }
 
@@ -399,13 +405,15 @@ p {
 
 .languages {
     width: 84%;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    border: 1px solid #fb144a;
+    border-radius: 3px;
     margin: 2rem 3rem;
     padding: 30px 20px;
     transition: 0.3s ease-in-out;
 
     &:hover {
-        background-color: #141414;
+        background-color: rgba(10, 10, 10, 0.901);
         transform: scale(1.01);
     }
 
