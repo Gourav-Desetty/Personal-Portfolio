@@ -231,7 +231,8 @@ p {
     height: 40px;
     border-radius: 10px;
     background-color: #fb144a;
-    color: #0A0A0A;
+    /* color: #0A0A0A; */
+    color: #FAF9F6;
     border: none;
     font-size: 1.29rem;
     font-weight: 500;
