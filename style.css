@@ -9,6 +9,11 @@
 
 html {
     scroll-behavior: smooth;
+    
+    background-image: linear-gradient(to bottom, #0f0f0f 0%, #0f0f0f 80%, #fb144a 200%);
+    background-size: 100% 500px; 
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .navbar {
@@ -228,13 +233,14 @@ p {
 }
 
 .Resume {
-    width: 100px;
+    width: 105px;
     height: 40px;
     border-radius: 10px;
-    background-color: #fb144a;
+    /* background-color: #fb144a; */
+    border: 2px solid #fb144a;
     /* color: #0A0A0A; */
     color: #FAF9F6;
-    border: none;
+    /* border: none; */
     font-size: 1.29rem;
     font-weight: 500;
     cursor: pointer;
@@ -244,6 +250,7 @@ p {
 .Resume:hover {
     filter: drop-shadow(2px 2px 18px #fb144a) ;
     transform: scale(1.03) translateY(-5px);
+    background-color: #fb144a;
 }
 
 
@@ -256,6 +263,7 @@ p {
     gap: 80px;
     justify-content: space-around;
     background-color: #fb144a;
+    border:none;
 }
 
 .aboutme-img img {
@@ -281,10 +289,15 @@ p {
 
 
 .education {
-    margin: 0 5rem;
-    padding: 80px 20px;
-    /* gap: 20px; */
+    margin: 0 0rem;
+    padding: 80px 5rem;
+    background-image: linear-gradient(to bottom, #0f0f0f, #fb144a 900%);
+    background-size: 100% 500px; 
+    background-repeat: no-repeat; 
+    background-position: bottom;
 }
+
+
 
 .education h2 {
     margin: 2rem 3rem;
@@ -389,13 +402,18 @@ p {
 
 
 .skills {
-    margin: 0 5rem;
-    padding: 80px 20px;
+    margin: 0 0;
+    padding: 80px 5rem;
     /* gap: 20px; */
+    background-image: linear-gradient(to top, #0f0f0f, #fb144a 900%);
+    background-size: 100% 500px; 
+    background-repeat: no-repeat; 
+    background-position: top;
 }
 
 .skills h2 {
     margin: 2rem 3rem;
+    background-color: transparent;
 }
 
 .skills h2::after {
@@ -448,6 +466,81 @@ a, li, span{
     background-color: transparent;
 }
 
+
+.contact-container{
+    margin: 10rem 5rem;
+    margin-top: 10rem;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-evenly;
+    background-color: transparent;  
+    
+}
+
+.contact-details{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 20px;
+}
+
+.contact-details h2{
+    font-size: 3rem;
+}
+
+.contact-details input{
+    border: 1.5px solid #fb144a;
+    height: 40px;
+    width: 390px;
+    outline:none;
+    border-radius: 5px;
+}
+
+.contact-details textarea{
+    border: 1.5px solid #fb144a;
+    outline:none;
+    width: 405px;
+    border-radius: 5px;
+}
+
+.contact-details input:focus{
+    border: 2px solid #fb144a;
+}
+
+.contact-details textarea:focus{
+    border: 2px solid #fb144a;
+}
+
+input, textarea::placeholder{
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.contact-details button{
+    background-color: #fb144a;
+    height: 40px;
+    width: 410px;
+    outline:none;
+    border-radius: 5px;
+    border: 2px solid #fb144a;
+    font-size: 1.2rem;
+}
+
+.contact-details button:active{
+    border: 6px solid #fb144a;
+}
+
+.contact-details h2::after {
+    content: "";
+    width: 110px;
+    height: 1px;
+    display: inline-block;
+    background: white;
+    margin: 12px 10px;
+}
 
 /*----------------------------------------------------- Media Queries------------------------------------------------- */
 
