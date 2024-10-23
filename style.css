@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
     
     background-image: linear-gradient(to bottom, #0f0f0f 0%, #0f0f0f 80%, #fb144a 200%);
-    background-size: 100% 500px; 
+    background-size: 100% 800px; 
     background-repeat: no-repeat;
     background-position: bottom;
 }

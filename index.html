@@ -23,7 +23,7 @@
                     <li><a href="#Skills" class="ani">Skills</a></li>
                     <li><a href="#" class="ani">Projects</a></li>
                     <!-- <li><a href="#" class="ani">Resume</a></li> -->
-                    <li><a href="#" class="ani">Contact me</a></li>
+                    <li><a href="#contact" class="ani">Contact me</a></li>
                 </ul>
                 <div class="bars">
                     <i class="fa-solid fa-bars"></i>
@@ -213,14 +213,15 @@
         </div>
     </div>
 
-    <div class="contact-container">
-        <div class="contact-details">
+    <div class="contact-container" id="contact">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-details">
             <h2>Get in Touch</h2>
+            <input type="hidden" name="access_key" value="24efceee-d795-4370-9389-a2d75f89b49b">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="text" name="email" placeholder="email@example.com" required>
             <textarea name="message" placeholder="Your Message..." rows='8' cols="10" required></textarea>
             <button type="submit">Submit</button>
-        </div>
+        </form>
         <div class="gif">
             <img src="images/Contact us (1).gif" alt="contact image">
         </div>
