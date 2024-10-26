@@ -482,7 +482,7 @@ a, li, span{
     background-image: 
         linear-gradient(to top, #0f0f0f, #fb144a 900%),
         linear-gradient(to bottom, #0f0f0f, #fb144a 900%);
-    background-size: 100% 200px, 100% 50px; 
+    background-size: 100% 200px, 100% 100px; 
     background-repeat: no-repeat; 
     background-position: top, bottom;
 }
@@ -554,8 +554,8 @@ input, textarea::placeholder{
 }
 
 .contact-container img{
-    width: 550px;
-    height: 550px;
+    width: 500px;
+    height: 500px;
 }
 
 /*----------------------------------------------------- Media Queries------------------------------------------------- */
