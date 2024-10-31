@@ -248,7 +248,7 @@ p {
 }
 
 .Resume:hover {
-    filter: drop-shadow(2px 2px 18px #fb144a) ;
+    filter: drop-shadow(2px 2px 5px #fb144a) ;
     transform: scale(1.03) translateY(-5px);
     background-color: #fb144a;
 }
@@ -470,7 +470,7 @@ a, li, span{
 
 
 .contact-container {
-    margin: 0rem 0rem;
+    margin: 0;
     padding: 40px 5rem;
     padding-bottom: 50px;
     display: flex;
@@ -743,18 +743,18 @@ input, textarea::placeholder{
     }
 
     .education {
-        margin: 4rem 1rem;
+        margin: 0 0rem;
         padding: 80px 10px;
     }
 
     .education h2,
     .skills h2 {
-        margin: 1.5rem 0;
+        margin: 0 0;
     }
 
     .skills {
-        margin: 4rem 1rem;
-        padding: 80px 10px;
+        margin: 0 0;
+        padding: 0 10px;
     }
 
     .languages {
@@ -897,10 +897,34 @@ input, textarea::placeholder{
     .languages {
         margin: 1rem 0;
         padding: 30px;
+        margin-bottom: 0;
     }
 
     .container img {
         width: 50px;
         height: 50px;
+    }
+
+    .contact-container h2{
+        font-size: 1.8rem;
+    }
+
+    .contact-container{
+        padding: 100px 0;
+    }
+
+    .contact-container input{
+        width: 260px;
+        margin-left: 20px;
+    }
+    
+    .contact-container textarea{
+        width: 275px;
+        margin-left: 20px;
+    }
+
+    .contact-container button{
+        width: 285px;
+        margin-left: 20px;
     }
 }
