@@ -9,9 +9,9 @@
 
 html {
     scroll-behavior: smooth;
-    
+
     background-image: linear-gradient(to bottom, #0f0f0f 0%, #0f0f0f 80%, #fb144a 200%);
-    background-size: 100% 800px; 
+    background-size: 100% 800px;
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -28,7 +28,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
     border-bottom: 0.1px solid #fb144a;
 }
 
@@ -62,7 +62,7 @@ html {
     color: #fb144a;
 }
 
-.info li a::before{
+.info li a::before {
     content: '';
     position: absolute;
     bottom: -3px;
@@ -75,7 +75,7 @@ html {
     transition: transform 0.3s;
 }
 
-.info li a:hover::before{
+.info li a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -127,7 +127,7 @@ html {
 .dropdown li a {
     position: relative;
     background-color: transparent;
-    color: #FAF9F6; 
+    color: #FAF9F6;
 }
 
 .dropdown li a::before {
@@ -157,7 +157,7 @@ html {
     align-items: center;
     gap: 100px;
     justify-content: space-around;
-    background-color: transparent;   
+    background-color: transparent;
 }
 
 .greet-text {
@@ -248,7 +248,7 @@ p {
 }
 
 .Resume:hover {
-    filter: drop-shadow(2px 2px 5px #fb144a) ;
+    filter: drop-shadow(2px 2px 5px #fb144a);
     transform: scale(1.03) translateY(-5px);
     background-color: #fb144a;
 }
@@ -263,7 +263,7 @@ p {
     gap: 80px;
     justify-content: space-around;
     background-color: #fb144a;
-    border:none;
+    border: none;
 }
 
 .aboutme-img img {
@@ -281,9 +281,9 @@ p {
     background-color: transparent;
 }
 
-.aboutme-text h2{
+.aboutme-text h2 {
     background-color: transparent;
-    color:yellow;
+    color: yellow;
     font-size: 2rem;
 }
 
@@ -292,8 +292,8 @@ p {
     margin: 0 0rem;
     padding: 80px 5rem;
     background-image: linear-gradient(to bottom, #0f0f0f, #fb144a 900%);
-    background-size: 100% 500px; 
-    background-repeat: no-repeat; 
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
     background-position: bottom;
 }
 
@@ -404,11 +404,11 @@ p {
 .skills {
     margin: 0;
     padding: 80px 5rem;
-    background-image: 
+    background-image:
         linear-gradient(to top, #0f0f0f, #fb144a 900%),
         linear-gradient(to bottom, #0f0f0f, #fb144a 900%);
-    background-size: 100% 500px; 
-    background-repeat: no-repeat; 
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
     background-position: top, bottom;
 }
 
@@ -464,7 +464,9 @@ p {
 
 
 
-a, li, span{
+a,
+li,
+span {
     background-color: transparent;
 }
 
@@ -477,19 +479,19 @@ a, li, span{
     align-items: center;
     gap: 100px;
     justify-content: space-evenly;
-    background-color: transparent;  
-    
-    background-image: 
+    background-color: transparent;
+
+    background-image:
         linear-gradient(to top, #0f0f0f, #fb144a 900%),
         linear-gradient(to bottom, #0f0f0f, #fb144a 900%);
-    background-size: 100% 200px, 100% 100px; 
-    background-repeat: no-repeat; 
+    background-size: 100% 200px, 100% 100px;
+    background-repeat: no-repeat;
     background-position: top, bottom;
 }
 
 
 
-.contact-details{
+.contact-details {
     max-width: fit-content;
     display: flex;
     flex-direction: column;
@@ -497,50 +499,51 @@ a, li, span{
     gap: 20px;
 }
 
-.contact-details h2{
+.contact-details h2 {
     font-size: 3rem;
     background-color: transparent;
 }
 
-.contact-details input{
+.contact-details input {
     border: 1.5px solid #fb144a;
     height: 40px;
     width: 390px;
-    outline:none;
+    outline: none;
     border-radius: 5px;
 }
 
-.contact-details textarea{
+.contact-details textarea {
     border: 1.5px solid #fb144a;
-    outline:none;
+    outline: none;
     width: 405px;
     border-radius: 5px;
 }
 
-.contact-details input:focus{
+.contact-details input:focus {
     border: 2px solid #fb144a;
 }
 
-.contact-details textarea:focus{
+.contact-details textarea:focus {
     border: 2px solid #fb144a;
 }
 
-input, textarea::placeholder{
+input,
+textarea::placeholder {
     padding: 5px 10px;
     font-size: 15px;
 }
 
-.contact-details button{
+.contact-details button {
     background-color: #fb144a;
     height: 40px;
     width: 410px;
-    outline:none;
+    outline: none;
     border-radius: 5px;
     border: 2px solid #fb144a;
     font-size: 1.2rem;
 }
 
-.contact-details button:active{
+.contact-details button:active {
     border: 6px solid #fb144a;
 }
 
@@ -553,7 +556,7 @@ input, textarea::placeholder{
     margin: 12px 10px;
 }
 
-.contact-container img{
+.contact-container img {
     width: 500px;
     height: 500px;
 }
@@ -905,25 +908,25 @@ input, textarea::placeholder{
         height: 50px;
     }
 
-    .contact-container h2{
+    .contact-container h2 {
         font-size: 1.8rem;
     }
 
-    .contact-container{
+    .contact-container {
         padding: 100px 0;
     }
 
-    .contact-container input{
+    .contact-container input {
         width: 260px;
         margin-left: 20px;
     }
-    
-    .contact-container textarea{
+
+    .contact-container textarea {
         width: 275px;
         margin-left: 20px;
     }
 
-    .contact-container button{
+    .contact-container button {
         width: 285px;
         margin-left: 20px;
     }
