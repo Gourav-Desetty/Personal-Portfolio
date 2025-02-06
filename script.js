@@ -14,4 +14,3 @@ togglebtn.onclick = function () {
 
     togglebtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
 }
-
