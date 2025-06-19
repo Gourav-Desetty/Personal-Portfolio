@@ -96,7 +96,8 @@
             <div class="college-details">
                 <h1><a href="https://www.soa.ac.in/" target="_main">Siksha 'O' Anusandhan University</a></h1>
                 <p>Bachelor of Technology in Computer Science and Technology <br> CGPA : 8.2 <br>Specialistaion : Core
-                    <br>September 2023 - July 2027</p>
+                    <br>September 2023 - July 2027
+                </p>
                 <p><strong>Key Courses:</strong> Data Structures, Algorithms, Web Development, Game Programming</p>
             </div>
         </div>
@@ -245,18 +246,21 @@
     </div>
 
     <div class="contact-container" id="contact">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-details">
-            <h2>Get in Touch</h2>
-            <input type="hidden" name="access_key" value="24efceee-d795-4370-9389-a2d75f89b49b">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="text" name="email" placeholder="email@example.com" required>
-            <textarea name="message" placeholder="Your Message..." rows='8' cols="10" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-        <div class="gif">
-            <img src="images/Contact_us-bro-ai-brush-removebg-j6uhugnb.png" alt="contact image">
-        </div>
+    <form id="contact-form" class="contact-details">
+        <h2>Get in Touch</h2>
+        <input type="hidden" name="access_key" value="24efceee-d795-4370-9389-a2d75f89b49b">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="email" placeholder="email@example.com" required>
+        <textarea name="message" placeholder="Your Message..." rows="8" cols="10" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="form-status" style="margin-top: 10px; color: green;"></p>
+
+    <div class="gif">
+        <img src="images/Contact_us-bro-ai-brush-removebg-j6uhugnb.png" alt="contact image">
     </div>
+</div>
 </body>
 
 </html>
